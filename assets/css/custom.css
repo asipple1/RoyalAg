@@ -1,0 +1,136 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #003E7E;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container-full {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.side-bar {
+  height: 100%;
+  margin-top: 60px;
+  opacity: .09;
+  position: absolute;
+}
+
+.side-bar img {
+  margin-left: 30px
+}
+
+.video-content h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: transparent;
+  border: solid #fff;
+  border-radius: 0px;
+  color: #fff;
+  letter-spacing: 10px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+
+.video-content h1:hover {
+  border-radius: 30px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.video-content h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  letter-spacing: 10px;
+}
+
+.middle-video {
+  background-color: #ecf0f1;
+  border: solid 5px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease
+}
+
+.index-video {
+  background-color: #ecf0f1;
+  border: solid 5px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease
+}
+
+.footer {
+  background-color: #34495e;
+  margin-top: 10px;
+}
+
+.footer .container {
+  transition: all 0.5s ease;
+  margin-top: -10px;
+}
+.rings {
+  margin-top: 200px;
+}
+.top-ad-container {
+  position: relative;
+}
+
+.top-ad {
+  position: absolute;
+  left: 0;
+  right: 0;
+   margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+
+.top-ad img {
+  margin-top: 20px;
+}
+
+.ads {
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+}
+
+.second-ad {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1280px) {
+  .footer .container {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  .middle-video {
+    height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ads {
+    height: 150px;
+    width: 150px;
+  }
+}
