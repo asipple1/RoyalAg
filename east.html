@@ -13,21 +13,189 @@
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
   <!-- Custom Css -->
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <style>
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    
+    body {
+      background-color: #003E7E;
+      color: #fff;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    
+    .container-full {
+      width: 100%;
+      margin-top: 5px;
+    }
+    
+    .side-bar {
+      height: 50%;
+      margin-top: 60px;
+      opacity: .09;
+      position: absolute;
+    }
+    
+    .side-bar img {
+      margin-left: 30px
+    }
+    
+    .video-content {
+      margin-top: -25px;
+    }
+    
+    .video-content h1 {
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: transparent;
+      border: solid #fff;
+      border-radius: 0px;
+      color: #fff;
+      letter-spacing: 10px;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -o-font-smoothing: antialiased;
+    }
+    
+    .video-content h1:hover {
+      border-radius: 30px;
+      color: #fff;
+      letter-spacing: 5px;
+    }
+    
+    .video-content h2 {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 36px;
+      letter-spacing: 10px;
+    }
+    
+    .middle-video {
+      background-color: #ecf0f1;
+      border: solid 5px;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease
+    }
+    
+    .index-video {
+      background-color: #ecf0f1;
+      border: solid 5px;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease
+    }
+    
+    .footer {
+      background-color: #34495e;
+      margin-top: 10px;
+      height: 100%;
+      bottom: 0;
+      position: relative;
+    }
+    
+    .footer .container {
+      transition: all 0.5s ease;
+    }
+    
+    .rings {
+      margin-top: 200px;
+    }
+    
+    .top-ad-container {
+      position: relative;
+    }
+    
+    .top-ad {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 200px;
+      width: 200px;
+    }
+    
+    .top-ad img {
+      margin-top: 20px;
+    }
+    
+    .ads {
+      transition: all 0.5s ease;
+      margin-top: 50px;
+      height: 200px;
+      width: 200px;
+    }
+    
+    .second-ad {
+      margin-bottom: 50px;
+    }
+    
+        
+    .forth-ad-bottom {
+      margin-top: 70px;
+    }
+    
+    @media (max-width: 1280px) {
+      .footer .container {
+        margin-top: 0;
+      }
+      .video-content {
+        margin-top: 50px;
+      }
+      .video-content a {
+        font-size: 30px;
+        letter-spacing: 0;
+      }
+      .video-content h2 {
+        font-size: 30px;
+        letter-spacing: 0;
+      }
+    }
+    
+    @media (max-width: 880px) {
+      .middle-video {
+        height: 450px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .ads {
+        height: 150px;
+        width: 150px;
+      }
+    }
+    .video-content a {
+      color: #fff;
+      font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    .second-ad-bottom {
+      margin-top: 10px
+    }
+  </style>
 </head>
 
 <body>
   <div class="container-full content">
-    <!--- Middle content --->
+    <!-- Middle content -->
     <div class="side-bar">
-      <img src="assets/images/TheRoyal.png" height="550" width="250">
+      <img src="//dvauction.s3.amazonaws.com/royal_ag_show_2015/images/TheRoyal.png" height="550" width="250">
     </div>
     <div class="col-md-8 col-md-push-2 video-content">
-      <h2 class="text-center">East Ring</h2>
+      <h2 class="text-center"><span class="pull-left"><span class="fa fa-angle-left"></span><a href="/pages/royal-ag-2015">Home</a></span>East Ring<span class="pull-right"><a href="/pages/royal-ag-2015-west" >West<span><i class="fa fa-angle-right"></i></span></a></span></h2>
+      <p id="announcements" class="text-center"></p>
       <div class="middle-video embed-responsive embed-responsive-16by9">
         <object class="embed-responsive-item" width="100%" height="100%">
 
-          <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf"></param>
+          <param name="movie" value="//fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf"></param>
 
           <param name="flashvars" value="src=rtmp%3A%2F%2F50.112.107.205%2Fdvrcast_origin%2F54286&loop=true&autoPlay=true&streamType=live&initialBufferTime=3"></param>
 
@@ -37,57 +205,64 @@
 
           <params name="wmode" value="opaque"></params>
 
-          <embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="100%" height="100%" wmode="opaque" flashvars="src=rtmp%3A%2F%2F50.112.107.205%2Fdvrcast_origin%2F54286&loop=true&autoPlay=true&streamType=live&initialBufferTime=3">
+          <embed src="//fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="100%" height="100%" wmode="opaque" flashvars="src=rtmp%3A%2F%2F50.112.107.205%2Fdvrcast_origin%2F54286&loop=true&autoPlay=true&streamType=live&initialBufferTime=3">
 
           </embed>
 
         </object>
       </div>
     </div>
-    <!--- Middle content end --->
+    <!-- Middle content end -->
   </div>
-  <!---- Bottom Ads --->
+  <div class="push"></div>
+ <!-- Bottom Ads -->
   <div class="row">
     <div class="col-md-12 footer">
       <div class="container">
-        <div class="col-md-3 col-xs-6">
-          <div class="first-ad-bottom ads">
+        <div class="col-md-3 col-xs-12">
+          <div class="first-ad-bottom ads center-block">
             <a href="http://www.royalfair.org/">
-              <img class="img-responsive" src="assets/images/TheRoyalAd.png">
+              <img class="img-responsive" src="//dvauction.s3.amazonaws.com/royal_ag_show_2015/images/TheRoyalAd.png">
             </a>
           </div>
         </div>
-        <div class="col-md-3 col-xs-6">
-          <div class="second-ad-bottom ads">
+        <div class="col-md-3 col-xs-12">
+          <div class="second-ad-bottom ads center-block">
             <a href="http://www.scotiabank.com/ca/en/0,,2,00.html">
-              <img class="img-responsive" src="assets/images/RingOfExcellence_bw.png">
+              <img class="img-responsive" src="//dvauction.s3.amazonaws.com/royal_ag_show_2015/images/RingOfExcellence_bw.png">
             </a>
           </div>
         </div>
-        <div class="col-md-3 col-xs-6">
-          <div class="third-ad-bottom ads">
+        <div class="col-md-3 col-xs-12">
+          <div class="third-ad-bottom ads center-block">
             <a href="http://www.masterfeeds.com/">
-              <img class="img-responsive" src="assets/images/MasterFeedsAd.png">
+              <img class="img-responsive" src="//dvauction.s3.amazonaws.com/royal_ag_show_2015/images/MasterFeedsAd.png">
             </a>
           </div>
         </div>
-        <div class="col-md-3 col-xs-6">
-          <div class="forth-ad-bottom ads">
+        <div class="col-md-3 col-xs-12">
+          <div class="forth-ad-bottom ads center-block">
             <a href="/">
-              <img class="img-responsive" src="assets/images/canadab.png">
+              <img class="img-responsive" src="//dvauction.s3.amazonaws.com/royal_ag_show_2015/images/canadab.png">
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!---- Bottom Ads End --->
+  <!-- Bottom Ads End -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </body>
-  <script>
+<script>
   $(document).ready(function() {
+
+    function refreshAnnouncements() {
+      $("#announcements").load("https://www.dvauction.com/consoles/54286/announcements");
+      $(window).trigger("resize");
+    }
+
     $(window).resize(function() {
       var docHeight = $(window).height();
       var footerHeight = $('.footer').height();
@@ -96,7 +271,13 @@
         $('.footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
       }
     });
+
     $(window).resize();
+
+    console.log("TEST");
+    setInterval(3000, refreshAnnouncements);
+    refreshAnnouncements();
   });
 </script>
+
 </html>
